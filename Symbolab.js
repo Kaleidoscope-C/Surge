@@ -4,8 +4,7 @@
 下载地址：https://apps.apple.com/cn/app/symbolab%E8%AE%A1%E7%AE%97%E5%99%A8/id876942533
 脚本作者：Kaleidoscope-C
 更新时间：2023.07.16
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
+使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 ********************************
 
@@ -13,6 +12,7 @@
 
 # Symbolab 解锁订阅
 ^https?:\/\/scibug\.com\/appleSubscriptionValidate$ url script-response-body https://raw.githubusercontent.com/Kaleidoscope-C/Surge/main/Symbolab.js
+
 [mitm] 
 
 hostname = scibug.com
