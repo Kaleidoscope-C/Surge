@@ -12,8 +12,7 @@
 [rewrite_local]
 
 # Symbolab 解锁订阅
-^https?:\/\/scibug\.com\/appleSubscriptionValidate$ url script-response-body https://raw.githubusercontent.com/harry-sunhao/QuanX/main/Symbolab/symbolab.js
-
+^https?:\/\/scibug\.com\/appleSubscriptionValidate$ url script-response-body https://raw.githubusercontent.com/Kaleidoscope-C/Surge/main/Symbolab.js
 [mitm] 
 
 hostname = scibug.com
