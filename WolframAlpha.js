@@ -4,18 +4,15 @@
 下载地址：
 脚本作者：Kaleidoscope-C
 更新时间：2023.07.16
-使用声明：⚠️此脚本仅供学习与交流，
-        请勿转载与贩卖！⚠️⚠️⚠️
+使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 
 ********************************
 
 [rewrite_local]
-
 # WolframAlpha Pro 解锁
-^https:\/\/www\.wolframalpha\.com\/users\/me\/account\?appid=*$ url script-response-body https://raw.githubusercontent.com/harry-sunhao/QuanX/main/Symbolab/symbolab.js
+^https:\/\/www\.wolframalpha\.com\/users\/me\/account\?appid=*$ url script-response-body https://raw.githubusercontent.com/Kaleidoscope-C/Surge/main/WolframAlpha.js
 
 [mitm] 
-
 hostname = www.wolframalpha.com
 *
 *
@@ -30,7 +27,7 @@ obj= {
       "hasError": false,
       "error": null,
       "name": "Cracked",
-      "email": "Cracked by xxx"
+      "email": "Cracked by Kaleidoscope-C"
     },
     "status": {
       "hasError": false,
