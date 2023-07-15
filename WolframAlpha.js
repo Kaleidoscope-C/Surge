@@ -22,239 +22,90 @@ hostname = www.wolframalpha.com
 let obj = JSON.parse($response.body);
 
 obj= {
- "account": {
-    "info": {
-      "hasError": false,
-      "error": null,
-      "name": "Cracked",
-      "email": "Cracked by Kaleidoscope-C"
+  "account" : {
+    "status" : {
+      "proLevel" : 1,
+      "proForEducators" : false,
+      "proForStudents" : false,
+      "signedIn" : true,
+      "hasError" : false,
+      "error" : null,
+      "pro" : true
     },
-    "status": {
-      "hasError": false,
-      "error": null,
-      "signedIn": true,
-      "pro": true,
-      "proForStudents": true,
-      "proForEducators": true,
-      "proLevel": 3
+    "error" : null,
+    "preferences" : {
+      "dateFormat" : "Automatic",
+      "location" : "Automatic",
+      "dataFormat" : "Excel 97-2004",
+      "contrast" : 0,
+      "homepageShortcuts" : false,
+      "resultsWidth" : 4,
+      "country" : "Automatic",
+      "soundFormat" : "mp3",
+      "currency" : "Automatic",
+      "updatedDate" : 1596536830000,
+      "homepageHints" : 0,
+      "imageFormat2d" : "gif",
+      "id" : 6668195,
+      "querySuggestion" : false,
+      "homepageFavorites" : false,
+      "createdDate" : 1596536830000,
+      "error" : null,
+      "hasError" : false,
+      "updatedBy" : 0,
+      "timezone" : "Automatic",
+      "unitFormat" : 0,
+      "queryHistory" : false,
+      "keyboard" : 0,
+      "imageFormat3d" : "format 1",
+      "fontSize" : 0,
+      "homepageBackground" : "blue-circles",
+      "homepageHistory" : false,
+      "homepageData" : false,
+      "userId" : 9427751
     },
-    "persona": {
-      "classification": "Student",
-      "source": null,
-      "resourceId": {
-        "userId": 9782356,
-        "productId": 9
-      }
-    },
-    "permissions": {
-      "hasError": false,
-      "error": null,
-      "features": {
-        "practiceSheets": {
-          "units": null,
-          "value": true
-        },
-        "embeddablePods": {
-          "units": null,
-          "value": true
-        },
-        "webApps": {
-          "units": null,
-          "value": ""
-        },
-        "fileUpload": {
-          "units": "MB",
-          "value": 0
-        },
-        "imageInput": {
-          "units": "MB",
-          "value": 0
-        },
-        "showSteps": {
-          "units": null,
-          "value": true
-        },
-        "specialCharacterKeyboards": {
-          "units": null,
-          "value": true
-        },
-        "pdfDownload": {
-          "units": null,
-          "value": true
-        },
-        "copyablePlaintext": {
-          "units": null,
-          "value": true
-        },
-        "cdfDownload": {
-          "units": null,
-          "value": true
-        },
-        "dataInput": {
-          "units": null,
-          "value": true
-        },
-        "cdfInteractivePods": {
-          "units": null,
-          "value": true
-        },
-        "customizeGraphicsPods": {
-          "units": null,
-          "value": true
-        },
-        "storeDownloadedData": {
-          "units": null,
-          "value": true
-        },
-        "longerTimeouts": {
-          "units": "seconds",
-          "value": 0
-        },
-        "zoomSubpods": {
-          "units": null,
-          "value": true
-        },
-        "downloadPodData": {
-          "units": null,
-          "value": true
-        },
-        "removeAds": {
-          "units": null,
-          "value": true
-        },
-        "emailProductSupport": {
-          "units": null,
-          "value": true
-        },
-        "saveSubpodAsImage": {
-          "units": null,
-          "value": true
-        }
-      }
-    },
-    "subscriptions": {
-      "hasError": false,
-      "error": null,
-      "hasSubscriptions": true,
-      "primarySubscription": {
-        "subscriptionId": 4486323,
-        "userId": 9782356,
-        "planId": 1106,
-        "startDate": "2020-08-04",
-        "nextBillingDate": "2099-12-31",
-        "finalAccessDate": "2099-12-31",
-        "status": "ACTIVE",
-        "paymentType": "NONE",
-        "monthStart": "2020-08-04",
-        "monthEnd": "2099-12-31",
-        "nda": false,
-        "userUuid": "ce6341b4-5c9c-45b9-7584-7542ff503b1c",
-        "plan": {
-          "planId": 1109,
-          "name": "Professional",
-          "description": "Wolfram Alpha Professional Subscription",
-          "billingPeriod": "NONE",
-          "planType": "PRO",
-          "productId": 12,
-          "canUpgrade": false,
-          "product": {
-            "productId": 12,
-            "name": "Wolfram|Alpha",
-            "type": "SUBSCRIPTION",
-            "prettyName": "wa",
-            "productReady": false,
-            "contactUsUrl": "https://www.wolframalpha.com/contact.html",
-            "productUrl": "https://www.wolframalpha.com/",
-            "productHost": "www.wolframalpha.com",
-            "productPricingUrl": "https://www.wolframalpha.com/pro",
-            "productReleased": false,
-            "learnAboutUrl": "https://products.wolframalpha.com/"
-          }
-        }
-      },
-      "nextSubscription": null,
-      "nextPaidSubscription": null,
-      "allSubscriptions": [
-        {
-         "subscriptionId": 4486323,
-        "userId": 9782356,
-        "planId": 1106,
-        "startDate": "2020-08-04",
-        "nextBillingDate": "2099-12-31",
-        "finalAccessDate": "2099-12-31",
-        "status": "ACTIVE",
-        "paymentType": "NONE",
-        "monthStart": "2020-08-04",
-        "monthEnd": "2099-12-31",
-        "nda": false,
-        "userUuid": "ce6341b4-5c9c-45b9-7584-7542ff503b1c",
-        "plan": {
-          "planId": 1109,
-          "name": "Pro",
-          "description": "Wolfram Alpha Professional Subscription",
-          "billingPeriod": "NONE",
-          "planType": "PRO",
-          "productId": 12,
-          "canUpgrade": false,
-          "product": {
-            "productId": 12,
-            "name": "Wolfram|Alpha",
-            "type": "SUBSCRIPTION",
-            "prettyName": "wa",
-            "productReady": false,
-            "contactUsUrl": "https://www.wolframalpha.com/contact.html",
-            "productUrl": "https://www.wolframalpha.com/",
-            "productHost": "www.wolframalpha.com",
-            "productPricingUrl": "https://www.wolframalpha.com/pro",
-            "productReleased": false,
-            "learnAboutUrl": "https://products.wolframalpha.com/"
-            }
-          }
-        }
+    "profilingSet" : null,
+    "subscriptions" : {
+      "billingDetails" : null,
+      "primarySubscription" : null,
+      "nextPaidSubscription" : null,
+      "hasSubscriptions" : false,
+      "nextSubscription" : null,
+      "allSubscriptions" : [
+
       ],
-      "billingDetails": null
+      "hasError" : false,
+      "error" : null
     },
-    "preferences": {
-      "hasError": false,
-      "error": null,
-      "id": 8058195,
-      "userId": 9782356,
-      "createdDate": 1596536830000,
-      "updatedDate": 1596536830000,
-      "updatedBy": 0,
-      "location": "Automatic",
-      "country": "Automatic",
-      "timezone": "Automatic",
-      "currency": "Automatic",
-      "dateFormat": "Automatic",
-      "unitFormat": 0,
-      "queryHistory": false,
-      "querySuggestion": false,
-      "keyboard": 0,
-      "dataFormat": "Excel 97-2004",
-      "imageFormat2d": "gif",
-      "imageFormat3d": "format 1",
-      "soundFormat": "mp3",
-      "resultsWidth": 4,
-      "fontSize": 0,
-      "contrast": 0,
-      "homepageBackground": "blue-circles",
-      "homepageHints": 0,
-      "homepageHistory": false,
-      "homepageFavorites": false,
-      "homepageData": false,
-      "homepageShortcuts": false
+    "links" : {
+      "facebook" : null
     },
-    "links": {
-      "facebook": null
+    "persona" : {
+      "classification" : "Student",
+      "resourceId" : {
+        "userId" : 9427751,
+        "productId" : 9
+      },
+      "source" : null
     },
-    "hasError": false,
-    "error": null,
-    "profilingSet": null
+    "permissions" : {
+      "error" : null,
+      "hasError" : false,
+      "features" : {
+
+      }
+    },
+    "hasError" : false,
+    "info" : {
+      "email" : "t906777942@gmail.com",
+      "name" : "Jacky Chan",
+      "hasError" : false,
+      "error" : null
+    }
   },
-  "hasError": false,
-  "error": null,
-  "profilingSet": null
+  "profilingSet" : null,
+  "hasError" : false,
+  "error" : null
 }
 
 $done({body: JSON.stringify(obj)});
