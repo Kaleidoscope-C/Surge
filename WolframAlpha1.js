@@ -10,7 +10,7 @@
 
 [rewrite_local]
 # WolframAlpha Pro 解锁
-^https:\/\/www\.wolframalpha\.com\/users\/me\/account\?appid=*$ url script-response-body https://raw.githubusercontent.com/Kaleidoscope-C/Surge/main/WolframAlpha1.js
+^https:\/\/www\.wolframalpha\.com\/users\/me\/account\?appid=* url script-response-body https://raw.githubusercontent.com/Kaleidoscope-C/Surge/main/WolframAlpha1.js
 
 [mitm] 
 hostname = www.wolframalpha.com
