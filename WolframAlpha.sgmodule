@@ -1,0 +1,11 @@
+#!name=WolframAlpha Pro
+#!desc=WolframAlpha Pro 解锁
+
+[Script]
+
+# WolframAlpha Pro 解锁
+WolframAlpha = type=http-response, pattern=^https:\/\/www\.wolframalpha\.com\/users\/me\/account\?appid=*$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Kaleidoscope-C/Surge/main/WolframAlpha.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% www.wolframalpha.com
