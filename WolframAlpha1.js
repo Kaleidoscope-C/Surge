@@ -22,8 +22,8 @@ const url = $request.url;
 if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-if (obj.vip){
-  obj.vip.pro = true;
+if (obj.account.status){
+  obj.account.status.pro = true;
 }
 
 $done({ body: JSON.stringify(obj) });
